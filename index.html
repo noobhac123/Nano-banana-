@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Image Generator</h1>
+            <p>Powered by Stability AI & Vercel</p>
+            <div class="credits">
+                <p>Credits Remaining: <span id="credits-count">...</span></p>
+            </div>
+        </header>
+
+        <main>
+            <form id="generator-form">
+                <textarea id="prompt-input" name="prompt" rows="3" placeholder="Enter a detailed prompt, e.g., 'An astronaut riding a horse on Mars, cinematic lighting'" required></textarea>
+                <button type="submit" id="generate-btn">Generate Image</button>
+            </form>
+
+            <div id="status-message"></div>
+
+            <div id="image-container">
+                <img id="result-image" src="" alt="Generated AI Image" style="display: none;">
+            </div>
+        </main>
+
+        <footer>
+            <p>You have 5 free image generations per day. Your usage is tracked via your IP address.</p>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

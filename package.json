@@ -1,0 +1,12 @@
+{
+  "name": "vercel-ai-image-generator",
+  "version": "1.0.0",
+  "description": "Real-time, login-less AI image generator on Vercel.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@vercel/kv": "^1.0.1"
+  }
+}
